@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.solar-system {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sun {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: yellow;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 50px 20px yellow;
+}
+
+.orbit {
+  position: absolute;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate infinite linear;
+}
+
+.planet {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Orbit sizes and durations */
+.mercury-orbit { width: 140px; height: 140px; animation-duration: 4s; }
+.mercury { width: 8px; height: 8px; background: gray; }
+
+.venus-orbit { width: 180px; height: 180px; animation-duration: 7s; }
+.venus { width: 12px; height: 12px; background: orange; }
+
+.earth-orbit { width: 230px; height: 230px; animation-duration: 10s; }
+.earth { width: 14px; height: 14px; background: blue; }
+
+.mars-orbit { width: 280px; height: 280px; animation-duration: 15s; }
+.mars { width: 12px; height: 12px; background: red; }
+
+.jupiter-orbit { width: 340px; height: 340px; animation-duration: 20s; }
+.jupiter { width: 20px; height: 20px; background: brown; }
+
+.saturn-orbit { width: 410px; height: 410px; animation-duration: 25s; }
+.saturn { width: 18px; height: 18px; background: goldenrod; }
+
+.uranus-orbit { width: 480px; height: 480px; animation-duration: 30s; }
+.uranus { width: 16px; height: 16px; background: lightblue; }
+
+.neptune-orbit { width: 550px; height: 550px; animation-duration: 35s; }
+.neptune { width: 16px; height: 16px; background: royalblue; }
+
+@keyframes rotate {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.info-box {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+  max-width: 300px;
+  display: none;
+}

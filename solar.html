@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Solar System – All Planets</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="solar-system">
+    <div class="sun"></div>
+
+    <div class="orbit mercury-orbit">
+      <div class="planet mercury" onclick="showInfo('Mercury')"></div>
+    </div>
+    <div class="orbit venus-orbit">
+      <div class="planet venus" onclick="showInfo('Venus')"></div>
+    </div>
+    <div class="orbit earth-orbit">
+      <div class="planet earth" onclick="showInfo('Earth')"></div>
+    </div>
+    <div class="orbit mars-orbit">
+      <div class="planet mars" onclick="showInfo('Mars')"></div>
+    </div>
+    <div class="orbit jupiter-orbit">
+      <div class="planet jupiter" onclick="showInfo('Jupiter')"></div>
+    </div>
+    <div class="orbit saturn-orbit">
+      <div class="planet saturn" onclick="showInfo('Saturn')"></div>
+    </div>
+    <div class="orbit uranus-orbit">
+      <div class="planet uranus" onclick="showInfo('Uranus')"></div>
+    </div>
+    <div class="orbit neptune-orbit">
+      <div class="planet neptune" onclick="showInfo('Neptune')"></div>
+    </div>
+  </div>
+
+  <div id="infoBox" class="info-box"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
